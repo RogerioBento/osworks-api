@@ -8,11 +8,12 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 
 @ControllerAdvice
-public class ClienteExceptionController {
+public class OrdemExceptionController {
 
-   @ExceptionHandler(value = ClienteNotFoundException.class)
-   
-   public ResponseEntity<Object> exception(ClienteNotFoundException exception) {
-      return new ResponseEntity<>("Cliente não encontrado!", HttpStatus.NOT_FOUND);
+   @ExceptionHandler(value = OrdemNotFoundException.class)
+
+   public ResponseEntity<Object> exception(OrdemNotFoundException exception) {
+      return new ResponseEntity<>("Ordem não encontrada!", HttpStatus.NOT_FOUND);
    }
+   
 }

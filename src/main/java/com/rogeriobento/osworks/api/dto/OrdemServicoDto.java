@@ -9,7 +9,7 @@ import com.rogeriobento.osworks.domain.model.StatusOrdemServico;
 public class OrdemServicoDto {
 
 	private Long id;
-	private Cliente nomeCliente;
+	private ClienteResumoDto cliente;
 	private String descricao;
 	private BigDecimal preco;
 	private StatusOrdemServico status;
@@ -22,11 +22,11 @@ public class OrdemServicoDto {
 	public void setId(Long id) {
 		this.id = id;
 	}
-	public Cliente getNomeCliente() {
-		return nomeCliente;
+	public ClienteResumoDto getCliente() {
+		return cliente;
 	}
-	public void setNomeCliente(Cliente cliente) {
-		this.nomeCliente = cliente;
+	public void setNomeCliente(ClienteResumoDto cliente) {
+		this.cliente = cliente;
 	}
 	public String getDescricao() {
 		return descricao;
